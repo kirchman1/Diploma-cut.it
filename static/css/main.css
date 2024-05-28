@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    min-height: 120vh;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(247, 103, 0);
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    padding: 0 10%;
+}
+
+header img {
+    width: 150px;
+    position: relative;
+  }
+
+header span {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  font-size: 40px;
+  font-weight: bold;
+  color:rgb(247, 103, 0);
+  font-family: "Bebas Neue", sans-serif;
+}  
+  
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+}
+
+#hi {
+  cursor: auto;
+}
+
+.wrapper {
+  height: 40vh;
+  display: block;  
+  text-align: center;
+  padding-top: 8%;
+}
+
+.wrapper h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 120px;
+}
+
+.wrapper h1 span {
+  color: rgb(247, 103, 0);
+}
+
+.wrapper p {
+  font-size: 20px;
+}
+
+.wrapper button,
+.form-register button, 
+.regreg .btn {
+  font-size: 18px;
+  color: #fff;
+  background: rgb(247, 103, 0);
+  border-radius: 25px;
+  border: 0;
+  padding: 8px 50px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.form-register button {
+  padding: 8px 35px;
+  margin-top: 15px;
+}
+
+.wrapper button:hover,
+.form-register button:hover,
+.regreg .btn:hover {
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0px 14px 25px -11px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 14px 25px -11px rgba(66, 68, 90, 1);
+  box-shadow: 0px 14px 25px -11px rgba(66, 68, 90, 1);
+}
+
+footer .foot {
+  background-color: rgb(55, 55, 55);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bebas Neue", sans-serif;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+footer .foot p,
+footer .foot span {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.about h1 {
+  margin-top: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.about p {
+  margin-top: 20px;
+  padding: 0 20%;
+}
+
+.about hr {
+  width: 200px;
+  margin: auto;
+  height: 3px;
+  background: #c483f2;
+  border: 0px;
+  border-radius: 50%;
+}
+
+.regreg {
+  margin: 50px auto;
+  width: 500px;
+  text-align: center;
+}
+
+.regreg h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+}
+
+.regreg .p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+}
+
+form label {
+  margin-top: 15px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+form .helptext {
+  font-size: 13px;
+  display: block;
+  color: #ff7800;
+}
+
+form input {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  width: 400px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form-register {
+  padding: 20px;
+  background: #fafafa;
+  border: 1px solid silver;
+  margin-top: 20px;
+}
+
+.form-register ul.errorlist {
+  color: #ca5858;
+  font-weight: bold;
+  margin: 0 30px;
+}
+
+.regreg .change {
+  margin-top: 70px;
+}
+
+.regreg .exit {
+  margin-top: 200px;
+}
+
+.regreg .loginagain {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 26px;
+}
+
+.regreg .info {
+  margin-top: 20px;
+}
+
+.regreg .info .orange {
+  color:rgb(247, 103, 0);
+}
+
+.regreg .links .link {
+  margin-top: 20px;
+  display: flex;
+}
+
+.regreg .links {
+  margin-top: 40px;
+}

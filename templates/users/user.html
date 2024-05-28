@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block title %} Authorization Page {% endblock %}
+
+{% block main %}
+    <div class="regreg">
+
+        <h2>Authorization Page</h2>
+
+        <form method="post" class="form-register">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">
+                Log in
+            </button>
+        </form>
+    </div>
+
+
+{% endblock main %}
+
+
+
+
+

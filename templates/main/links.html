@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <div class="regreg">
+        <h2>Create new link</h2>
+        <form method="post" class="form-register">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">
+                Add
+            </button>
+        </form>
+        <div class="links">
+            <h2>Your links:</h2>
+            {% for el in links %}
+                {% if el.author == user %}
+                    <div class="link">
+                        <p>LINK - <b><a href="{{ el.link }}" target="_blank">/link/{{ el.slug }}/</a></b></p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

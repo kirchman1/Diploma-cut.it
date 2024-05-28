@@ -1,0 +1,48 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="{% url 'home' %}"><img src="/pictures/cut.png" alt=""></a>
+        <span>We will cut your link!</span>
+        <ul>
+            <li><a href="{% url 'home' %}">Main</a></li>
+            <li><a href="{% url 'about' %}">About us</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'links' %}">Links</a></li>
+                <li id="hi">Hi, {{ user.username }}</li>
+            {% else %}
+                <li><a href="{% url 'user' %}">Log in</a></li>
+                <li><a href="{% url 'reg' %}">Register</a></li>
+            {% endif %}
+        </ul>
+    </header>
+
+
+    {% block main %}
+
+    {% endblock %}
+
+
+</div>
+
+<footer>
+    <div class="foot container">
+        <p>All rights reserved</p>
+        <span>*2024*</span>
+    </div>
+</footer>
+
+
+</body>
+</html>

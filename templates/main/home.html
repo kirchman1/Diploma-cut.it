@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <div class="wrapper">
+        <h1>CUT.<span>IT</span></h1>
+        <p>Make your life easier</p>
+        <a href="{% url 'profile' %}"><button>Profile</button></a>
+    </div>
+
+    <div class="links">
+        {% for el in links %}
+            <div class="link">
+                <p>LINK - <a href="{{ el.link }}" target="_blank">/link/{{ el.slug }}</a></p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

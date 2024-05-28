@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+  <div class="regreg">
+    <h2>Profile</h2>
+
+    <div>
+      <p class="info">
+        <strong>User: <span class="orange">{{ user.username }}</span></strong>
+        {% if user.email %}
+          <p><b>Email:</b> {{ user.email }}</p>
+        {% else %}
+          <p><b>Email: </b>—</p>
+        {% endif %}
+      </p>
+      <form action="{% url 'exit' %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn">Exit</button>
+      </form>
+    </div>
+
+    <h3 class="change">Change information about this User</h3>
+
+    <form method="post" enctype="multipart/form-data" class="form-register">
+      {% csrf_token %}
+      {{ updateUserForm.as_p }}
+      <button type="submit">Update</button>
+    </form>
+
+  </div>
+{% endblock main %}
+
+
