@@ -7,7 +7,8 @@
 - несколько статических страниц (главная, о нас);
 - динамически обновляемые и сохраняемые в БД, введенные конкретным пользователям ссылки.
 
-## Технологии
+## Технологии:
+![Static Badge](https://img.shields.io/badge/PYTHON-%233776AB?logo=Python&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/DJANGO-%23092E20?logo=django)
 ![Static Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572b6?logo=css3&logoColor=white)
@@ -22,7 +23,7 @@
 ## Запуск проекта:
 * Склонировать проект на ваш компьютер с Github с помощью команды:
 ```
-git clone https://github.com/
+git clone https://github.com/https://github.com/kirchman1/Diploma-cut.it.git
 ```
 
 * Запустить проект с помощью команды:
