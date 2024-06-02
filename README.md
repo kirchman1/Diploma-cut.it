@@ -1,13 +1,13 @@
-# Мой дипломный проект
+# My graduation project
 
-Суть моего проекта - обрезание ссылок (вставляем ссылку и кодовое слово, а на выходе получаем укороченную по кодовому слову ссылку). 
+The essence of my project is link clipping (we insert a link and a code word, and at the output we get a link shortened by the code word). 
 
-Страница включает в себя: 
-- систему авторизации и регистрации с БД;
-- несколько статических страниц (главная, о нас);
-- динамически обновляемые и сохраняемые в БД, введенные конкретным пользователям ссылки.
+The page includes: 
+- authorization and registration system with DB;
+- several static pages (homepage, about us);
+- dynamically updated and stored in the database links, entered by specific users.
 
-## Технологии:
+## Technologies:
 ![Static Badge](https://img.shields.io/badge/PYTHON-%233776AB?logo=Python&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/DJANGO-%23092E20?logo=django)
 ![Static Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
@@ -20,13 +20,13 @@
 
 ![](./pictures/screen3.png)
 
-## Запуск проекта:
-* Склонировать проект на ваш компьютер с Github с помощью команды:
+## Project launch:
+* Clone the project to your computer from Github using the command:
 ```
 git clone https://github.com/https://github.com/kirchman1/Diploma-cut.it.git
 ```
 
-* Запустить проект с помощью команды:
+*Launch the project using the command:
 ```
 python manage.py runserver
 ```
