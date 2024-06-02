@@ -26,7 +26,7 @@ The page includes:
 git clone https://github.com/https://github.com/kirchman1/Diploma-cut.it.git
 ```
 
-*Launch the project using the command:
+* Launch the project using the command:
 ```
 python manage.py runserver
 ```
