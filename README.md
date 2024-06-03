@@ -1,9 +1,9 @@
 # My graduation project
 
-The essence of my project is link clipping (we insert a link and a code word, and at the output we get a link shortened by the code word). 
+The essence of my project is link clipping (inserting a link and a code word, and in the output getting a link shortened by the code word). 
 
 The page includes: 
-- authorization and registration system with DB;
+- the system of authorization and registration using DB;
 - several static pages (homepage, about us);
 - dynamically updated and stored in the database links, entered by specific users.
 
